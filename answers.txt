@@ -1,0 +1,32 @@
+Operating Systems
+Assignment 2
+Basic Forks and C Style Development
+
+1- Process Creation (process_creation.c)
+
+This program uses fork() to create a child process
+If fork() returns 0, the child process prints its PID
+If it returns a positive value, the parent process prints its PID
+If it returns a negative value, the process creation failed
+The getpid() function returns the ID of the current process
+
+2- Linker Example (file1.c and file2.c)
+
+The first file contains a function called hello() that prints a message
+The second file contains the main function, which calls hello()
+Both files are compiled and linked together to create one executable program
+
+3- Loader Example (simple_program.c)
+
+This program prints a simple message on the screen
+After compiling it, we can use the ldd command to display its shared library dependencies
+
+4- What is the job of the Linker?
+
+The linker combines object files and resolves references between functions and libraries to produce an executable file
+For example, it connects the hello() function in file1.c with its function call in file2.c
+
+5- What is the job of the Loader?
+
+The loader loads the executable program into memory and prepares it for execution
+For dynamically linked programs, the dynamic linker also loads the required shared libraries before the program runs
