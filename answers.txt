@@ -30,3 +30,7 @@ For example, it connects the hello() function in file1.c with its function call 
 
 The loader loads the executable program into memory and prepares it for execution
 For dynamically linked programs, the dynamic linker also loads the required shared libraries before the program runs
+
+6- Makefile Explanation
+
+The Makefile is used to compile all three programs by running the make command instead of compiling each program separately. It uses GCC to compile the C files. The make clean command removes the executable files without deleting the original C files
